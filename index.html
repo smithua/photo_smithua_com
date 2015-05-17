@@ -16,58 +16,14 @@
     <meta name="text:Google Analytics ID" content=""/>
     <!-- DEFAULT FONTS -->
     <meta name="font:Title" content=""/>
-
     <link rel="stylesheet" href="http://static.tumblr.com/rft8kbs/2QXnodsl7/normalize.min.css" async>
+    <link rel="stylesheet" href="http://static.tumblr.com/rft8kbs/kPXnohw2g/main.css" async>
     <style>
-    html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}/* END OF NORMALIZE*/
-    .site_title {font: 10vw {font:Title};color: #212121;margin: 0;padding: 2% 0 1%;}
-    .follow_block {color: #333;margin: 0;padding: 0 0 25px;}
-    .body {font: 1.3em 'Roboto Condensed', Arial, sans-serif;}
-    .like_and_reblog_buttons {
-        position: absolute;
-        top: 0;
-        display: flex;
-        width: calc(100% - 45px);
-        padding: 20px 80px;
-        opacity: 0;
-
-    }
-    .like_and_reblog_buttons a:hover {
-        border:0;
-    }
-    .post_photo__wrap .like_and_reblog_buttons {
-        transition: all .2s ease;
-    }
-    .post_photo__wrap:hover .like_and_reblog_buttons {
-        opacity: 1;
-        background: linear-gradient(to bottom,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0));
-    }
-    .post_photo__wrap:hover .like_and_reblog_buttons .reblog_button,
-    .post_photo__wrap:hover .like_and_reblog_buttons .like_button {
-        transform: translateY(0px);
-    }
-    .reblog_button,
-    .like_button {
-        transition: transform .5s ease;
-        transform: translateY(-20px);
-        opacity: .7;
-    }
-    .reblog_button:hover,
-    .like_button:hover {
-        opacity: 1;
-    }
-    .reblog_button {
-        margin: auto;
-    }
-    .like_button {
-        width: 30px;
-        height: 30px;
-        margin: auto;
-    }
+    *, *:before, *:after {box-sizing: border-box;}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}.dn{display: none;}.m0.m0.m0{margin: 0;}article{list-style-type: none;}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}/* END OF NORMALIZE*/
+        .site_title {font: 10vw {font:Title};}
     /* MASTER */
-    *,:after,:before{box-sizing:border-box}body{-webkit-font-smoothing:antialiased;background:#F9F9F9}img{vertical-align:middle;border:0;-ms-interpolation-mode:bicubic}a{color:#01579B;text-decoration:none}a:hover{color:#01579B;border-bottom:1px solid #01579B}article{list-style-type:none}header{height:100%;text-align:center;background:#FF8F00;box-shadow:0 2px 5px rgba(0,0,0,.26)}header:after{content:"";width:100%;height:20px;background:#FF6F00;position:absolute;top:0;left:0;box-shadow:inset 0 0 3px #FF8F00}.dn{display:none}figure{margin:0}figcaption.caption{position:absolute;bottom:0;padding:10px 20px;background:rgba(0,0,0,.26);width:calc(100% - 45px);color:#F4F4F4}figcaption.caption p{margin:0;padding:0;display:inline-block}.post.photo{position:relative;text-align:center;margin-top:45px;padding-left:22px;padding-right:23px}.img-responsive{display:inline-block;max-width:100%;height:auto;box-shadow:0 8px 17px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19)}.container{margin-right:auto;margin-left:auto;padding-top:40px}@media (max-width:767px){.col-xs-12{width:90%;margin:0 auto}.col-xs-12 img{width:80%}.col-xs-12 figcaption.caption{font-size:3vw;background:0 0}.col-xs-12 figcaption.caption p{padding:2px 20px;background:rgba(0,0,0,.47)}}@media (min-width:768px){.site_title{font-size:4em}.container{width:750px}.col-sm-6{float:left;width:50%}}@media (min-width:992px){.site_title{font-size:5em}.container{width:970px}.col-md-6{float:left;width:50%}}@media (min-width:1200px){.site_title{font-size:6em}.container{width:1090px}.col-lg-6{float:left;width:50%}}.container:after,.container:before{content:" ";display:table}.container:after{clear:both}
+    .body{font:1.3em 'Roboto Condensed',Arial,sans-serif;background:#F9F9F9;-webkit-font-smoothing:antialiased}.site_title{color:#212121;margin:0;padding:2% 0 1%}.follow_block{color:#333;margin:0;padding:0 0 25px}img{vertical-align:middle;-ms-interpolation-mode:bicubic}a{color:#01579B;text-decoration:none}a:hover{color:#01579B;border-bottom:1px solid #01579B}header{height:100%;text-align:center;background:#FF8F00;box-shadow:0 2px 5px rgba(0,0,0,.26)}header:after{content:"";width:100%;height:20px;background:#FF6F00;position:absolute;top:0;left:0;box-shadow:inset 0 0 3px #FF8F00}.caption{position:absolute;bottom:0;padding:10px 20px;background:rgba(0,0,0,.26);width:calc(100% - 45px);color:#F4F4F4}.caption p{margin:0;padding:0;display:inline-block}.post.photo{position:relative;text-align:center;margin-top:45px;padding-left:22px;padding-right:23px}.img-responsive{display:inline-block;max-width:100%;height:auto;box-shadow:0 8px 17px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19)}.container{margin-right:auto;margin-left:auto;padding-top:40px}.container:after,.container:before{content:" ";display:table}.container:after{clear:both}.like_and_reblog_buttons{position:absolute;top:0;display:-webkit-flex;display:-ms-flexbox;display:flex;width:calc(100% - 45px);padding:20px 80px;opacity:0;background:linear-gradient(to bottom,rgba(0,0,0,.6),transparent);transition:opacity .2s ease;transition-delay:.3s}.like_and_reblog_buttons a:hover{border:0}.like_button{width:30px;height:30px}.like_button,.reblog_button{margin:auto;opacity:.7;-webkit-transform:translateY(-20px);transform:translateY(-20px);transition:-webkit-transform .4s ease,opacity .2s ease;transition:transform .4s ease,opacity .2s ease;transition-delay:.3s}.like_button:hover,.reblog_button:hover{opacity:1}.post_photo__wrap:hover .like_and_reblog_buttons{opacity:1;transition-delay:0s}.post_photo__wrap:hover .like_and_reblog_buttons .like_button,.post_photo__wrap:hover .like_and_reblog_buttons .reblog_button{-webkit-transform:translateY(0);transform:translateY(0);transition-delay:0s}@media (max-width:767px){.col-xs-12{width:90%;margin:0 auto}.col-xs-12 img{width:80%}.col-xs-12 figcaption.caption{font-size:3vw;background:0 0}.col-xs-12 figcaption.caption p{padding:2px 20px;background:rgba(0,0,0,.47)}.post_photo__wrap .like_and_reblog_buttons{opacity:1}.like_button,.reblog_button{-webkit-transform:translateY(0);transform:translateY(0)}.like_and_reblog_buttons{background:0 0}}@media (min-width:768px){.site_title{font-size:4em}.container{width:750px}.col-sm-6{float:left}.col-sm-6{width:50%}}@media (min-width:992px){.site_title{font-size:5em}.container{width:970px}.col-md-6{float:left}.col-md-6{width:50%}}@media (min-width:1200px){.site_title{font-size:6em}.container{width:1090px}.col-lg-6{float:left}.col-lg-6{width:50%}}
     </style>
-    <link rel="stylesheet" href="http://static.tumblr.com/rft8kbs/D0Unodz2y/master.min.css" async>
 </head>
 <body class="body">
     {block:IfGoogleAnalyticsID}
@@ -87,7 +43,7 @@
         <section class="autopagerize_page_element">
             {block:Posts}{block:Photo}
             <article class="post photo col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                <figure class="post_photo__wrap">
+                <figure class="post_photo__wrap m0">
                     {LinkOpenTag}<img class="img-responsive" src="{PhotoURL-500}" alt="{PhotoAlt}"/>{LinkCloseTag}
                     <section class="like_and_reblog_buttons">
                         {ReblogButton color="white" size="30"}

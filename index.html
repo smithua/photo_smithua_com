@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{block:TagPage}{Tag} posts - {/block:TagPage} {block:SearchPage}{lang:Search results for SearchQuery} - {/block:SearchPage}{block:PostSummary}{PostSummary} - {/block:PostSummary}{Title}</title>
+    <meta name="description" content="{MetaDescription}" />
+    <meta name="keywords" content="{block:Permalink}{block:Posts}{block:Tags}{Tag}, {/block:Tags}{/block:Posts}{/block:Permalink}, instagram, photo, photoblog,smithua, nature, iphone, iphoneonly, iphone photo, iphone 5, iphone 6, photo galery, play, beautiful images, tumblr, blog" />
+    <meta name=”title” content=”{block:PostSummary}{PostSummary} - {/block:PostSummary}{Title}” />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" href="{Favicon}">
+    <link rel="apple-touch-icon-precomposed" href="{PortraitURL-128}">
+    <link rel="alternate" type="application/rss+xml" href="{RSS}">
+
+    <meta name="text:Google Analytics ID" content=""/>
+    <!-- DEFAULT FONTS -->
+    <meta name="font:Title" content=""/>
+
+    <link rel="stylesheet" href="http://static.tumblr.com/rft8kbs/2QXnodsl7/normalize.min.css" async>
+    <style>
+    html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}/* END OF NORMALIZE*/
+    .site_title {font: 10vw {font:Title};color: #212121;margin: 0;padding: 2% 0 1%;}
+    .follow_block {color: #333;margin: 0;padding: 0 0 25px;}
+    .body {font: 1.3em 'Roboto Condensed', Arial, sans-serif;}
+    .like_and_reblog_buttons {
+        position: absolute;
+        top: 0;
+        display: flex;
+        width: calc(100% - 45px);
+        padding: 20px 80px;
+        opacity: 0;
+
+    }
+    .like_and_reblog_buttons a:hover {
+        border:0;
+    }
+    .post_photo__wrap .like_and_reblog_buttons {
+        transition: all .2s ease;
+    }
+    .post_photo__wrap:hover .like_and_reblog_buttons {
+        opacity: 1;
+        background: linear-gradient(to bottom,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0));
+    }
+    .post_photo__wrap:hover .like_and_reblog_buttons .reblog_button,
+    .post_photo__wrap:hover .like_and_reblog_buttons .like_button {
+        transform: translateY(0px);
+    }
+    .reblog_button,
+    .like_button {
+        transition: transform .5s ease;
+        transform: translateY(-20px);
+        opacity: .7;
+    }
+    .reblog_button:hover,
+    .like_button:hover {
+        opacity: 1;
+    }
+    .reblog_button {
+        margin: auto;
+    }
+    .like_button {
+        width: 30px;
+        height: 30px;
+        margin: auto;
+    }
+    /* MASTER */
+    *,:after,:before{box-sizing:border-box}body{-webkit-font-smoothing:antialiased;background:#F9F9F9}img{vertical-align:middle;border:0;-ms-interpolation-mode:bicubic}a{color:#01579B;text-decoration:none}a:hover{color:#01579B;border-bottom:1px solid #01579B}article{list-style-type:none}header{height:100%;text-align:center;background:#FF8F00;box-shadow:0 2px 5px rgba(0,0,0,.26)}header:after{content:"";width:100%;height:20px;background:#FF6F00;position:absolute;top:0;left:0;box-shadow:inset 0 0 3px #FF8F00}.dn{display:none}figure{margin:0}figcaption.caption{position:absolute;bottom:0;padding:10px 20px;background:rgba(0,0,0,.26);width:calc(100% - 45px);color:#F4F4F4}figcaption.caption p{margin:0;padding:0;display:inline-block}.post.photo{position:relative;text-align:center;margin-top:45px;padding-left:22px;padding-right:23px}.img-responsive{display:inline-block;max-width:100%;height:auto;box-shadow:0 8px 17px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19)}.container{margin-right:auto;margin-left:auto;padding-top:40px}@media (max-width:767px){.col-xs-12{width:90%;margin:0 auto}.col-xs-12 img{width:80%}.col-xs-12 figcaption.caption{font-size:3vw;background:0 0}.col-xs-12 figcaption.caption p{padding:2px 20px;background:rgba(0,0,0,.47)}}@media (min-width:768px){.site_title{font-size:4em}.container{width:750px}.col-sm-6{float:left;width:50%}}@media (min-width:992px){.site_title{font-size:5em}.container{width:970px}.col-md-6{float:left;width:50%}}@media (min-width:1200px){.site_title{font-size:6em}.container{width:1090px}.col-lg-6{float:left;width:50%}}.container:after,.container:before{content:" ";display:table}.container:after{clear:both}
+    </style>
+    <link rel="stylesheet" href="http://static.tumblr.com/rft8kbs/D0Unodz2y/master.min.css" async>
+</head>
+<body class="body">
+    {block:IfGoogleAnalyticsID}
+    <script>
+    var _gaq=[['_setAccount','{text:Google Analytics ID}'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+    ga(‘set’, ‘&uid’, {{USER_ID}});
+    </script>
+    {/block:IfGoogleAnalyticsID}
+    <header class="header">
+        <h1 class="site_title">{Title}</h1>
+        <p class="follow_block">folow me on <a href="//twitter.com/smithua" target="_blank">Twitter</a> and my <a href="//instagram.com/smithua" target="_blank">Instagram</a></p>
+    </header>
+    <main id="posts" class="container">
+        <section class="autopagerize_page_element">
+            {block:Posts}{block:Photo}
+            <article class="post photo col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <figure class="post_photo__wrap">
+                    {LinkOpenTag}<img class="img-responsive" src="{PhotoURL-500}" alt="{PhotoAlt}"/>{LinkCloseTag}
+                    <section class="like_and_reblog_buttons">
+                        {ReblogButton color="white" size="30"}
+                        {LikeButton color="white" size="30"}
+                    </section>
+                    {block:Caption}
+                    <figcaption class="caption">
+                        {Caption}
+                    </figcaption>
+                    {/block:Caption}
+                </figure>
+            </article>
+            {/block:Photo}{/block:Posts}
+        </section>
+    </main>
+    <footer id="footer" class="dn">
+        {block:PreviousPage}
+        <a href="{PreviousPage}">&#171; Previous</a>
+        {/block:PreviousPage}{block:NextPage}
+        <a href="{NextPage}">Next &#187;</a>
+        {/block:NextPage}
+    </footer>
+    <!-- SCRIPTS -->
+    <script src="http://static.tumblr.com/rft8kbs/oqInocazk/infinitescrolling.js" async></script>
+</body>
+</html>
